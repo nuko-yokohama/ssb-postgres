@@ -101,12 +101,12 @@ CREATE TABLE lineorder (
   lo_orderpriority CHAR(15),
   lo_shippriority  CHAR(1),
   lo_quantity      INTEGER,
-  lo_extendedprice INTEGER,
-  lo_ordtotalprice INTEGER,
-  lo_discount      INTEGER,
-  lo_revenue       INTEGER,
-  lo_supplycost    INTEGER,
-  lo_tax           INTEGER,
+  lo_extendedprice NUMERIC,
+  lo_ordtotalprice NUMERIC,
+  lo_discount      NUMERIC,
+  lo_revenue       NUMERIC,
+  lo_supplycost    NUMERIC,
+  lo_tax           NUMERIC,
   lo_commitdate    DATE, -- FK to D_DATEKEY
   lo_shipmod       CHAR(10), 
   dummy            TEXT, -- dbgen last delimiter
